@@ -1,28 +1,86 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Typing-game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css">
-    
+
 </head>
+
 <body>
-    <div> 
-            <input type="radio" name="easy" value="easy"> Easy
-            <input type="radio" name="medium" value="medium"> Medium
-            <input type="radio" name="hard" value="hard"> Hard
-            <br>
-            
+    <div class="main">
+        <div id="levo">
+
+
+            <form action="">
+                <input type="radio" name="gender" value="Easy" id="easy"> Easy
+                <input type="radio" name="gender" value="Medium" id="medium"> Medium
+                <input type="radio" name="gender" value="Hard" id="hard"> Hard
+            </form>
+
+
+
+            <button id="pocetakIgre">Start game</button>
+            <h3 id="random">0</h3>
+            <input type="text" placeholder="Input Letter" id="slovo" onkeypress="nekiEvent ()">
+            <h3 id="demo2"></h3>
+        </div>
+
+
+
+        <div id="desno">
+            <h4 id="score">SCORE</h4>
+            <h4 id="hit1">HIT: <span id="hit">0</span></h4>
+            <h4 id="miss1">MISS: <span id="miss">0</span></h4>
+            <h4 id="left1">LEFT: <span id="left">26</span></h4>
+
+        </div>
+
     </div>
-    <div></div>
-    <div></div>
 
-
-
-
-
+    <div id="donji">
+        <div class="flex-container">
+            <div>
+                <span id="a">A(1) </span>
+                <span id="b">B(2) </span>
+                <span id="c">C(3) </span>
+                <span id="d">D(4) </span>
+                <span id="e">E(5) </span>
+                <span id="f">F(6) </span>
+            </div>
+            <div >
+                <span id="g">G(7) </span>
+                <span id="h">H(8) </span>
+                <span id="i">I(9) </span>
+                <span id="j">J(10)</span>
+                <span id="k">K(11)</span>
+                <span id="l">L(12)</span>
+            </div>
+            <div >
+                <span id="m">M(13)</span>
+                <span id="n">N(14)</span>
+                <span id="o">O(15)</span>
+                <span id="p">P(16)</span>
+                <span id="q">Q(17)</span>
+                <span id="r">R(18)</span>
+            </div>
+            <div >
+                <span id="s">S(19)</span>
+                <span id="t">T(20)</span>
+                <span id="u">U(21)</span>
+                <span id="v">V(22</span>
+                <span id="w"> W(23)</span>
+                <span id="x">X(24)</span>
+            </div>
+            <div >
+                <span id="y">Y(25) </span>
+                <span id="z">Z(26) </span>
+            </div>
+        </div>
+    </div>
 
 
 
@@ -32,4 +90,5 @@
 
     <script src="main.js"></script>
 </body>
+
 </html>
